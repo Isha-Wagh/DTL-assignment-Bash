@@ -4,6 +4,7 @@ float add(float a, float b);
 float sub(float a, float b);
 float mult(float a, float b);
 float div(float a, float b);
+float pow(float a, float b);
 
 int main(){
 
@@ -16,7 +17,7 @@ int main(){
     scanf("%f", &num2);
 
     printf("\n**********OPERATIONS**********\n");
-    printf("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n\n");
+    printf("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Power\n\n");
 
     printf("Enter your choice : ");
     scanf("%d", &choice);
@@ -36,6 +37,8 @@ int main(){
         case 4:
             div(num1, num2);
             break;
+        case 5:
+            pow(num1, num2);
         default:
             printf("Invalid Choice!");
     }
@@ -70,6 +73,8 @@ float div(float a, float b){
     float c = a / b;
     printf("%.2f / %.2f = %.2f", a, b, c);
     return c;
+}
 
-
+float pow(float a, float b){
+    float i 
 }
